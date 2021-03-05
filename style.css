@@ -1,7 +1,39 @@
+/* mobile first approach */
 /* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background: #eaeaea;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
+#title {
+  margin-top: 1rem;
+  text-align: center;
+}
 /* img */
+#img-div {
+  align-self: center;
+  background: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
 #img {
   max-width: 100%;
+  margin: 0 auto;
+}
+
+/* text content */
+#tribute-info {
+  padding: 1rem;
+  line-height: 1.5;
+  font-family: sans-serif;
 }
