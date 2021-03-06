@@ -37,3 +37,11 @@ body {
   line-height: 1.5;
   font-family: sans-serif;
 }
+
+
+/* media queries */
+@media (min-width:600px) {
+  body {
+    background: deeppink;
+  }
+}
