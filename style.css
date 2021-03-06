@@ -7,7 +7,10 @@
 }
 
 body {
-  background: #eaeaea;
+  background: rgba(129, 52, 5, 0.2);
+  background-image: url(so-white.png);
+  background-blend-mode: multiply;
+  background-repeat: repeat;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,8 +25,12 @@ h2 {
 
 
 #main {
+  display: flex;
+  flex-direction: column;
   padding: 1rem;
+  padding-bottom: 4rem;
   background: #fafaff;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
 }
 #title {
   font-family: 'Bebas Neue', cursive;
@@ -60,9 +67,10 @@ h2 {
   font-family: sans-serif;
 }
 #tribute-link {
+  align-self: center;
+  /* border: 1px solid red; */
   font-family: sans-serif;
   margin-bottom: 1rem;
-  /* background: yellow; */
   display: inline-block;
   text-decoration: none;
   color: cornflowerblue;
@@ -72,6 +80,7 @@ h2 {
 #tribute-link:hover {
   background: #666;
   color: #fff;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
 }
 
 .characters-list {
@@ -92,6 +101,7 @@ h2 {
 .characters-list a:hover {
   background: crimson;
   color: #eaeaea;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
 }
 
 /* media queries */
@@ -104,6 +114,7 @@ h2 {
   }
   #tribute-info {
     padding: 4rem;
+    padding-bottom: 1rem;
     font-size: 1.2rem;
   }
   #tribute-link {
@@ -124,7 +135,7 @@ h2 {
 
   #title {
     font-size: 3.4rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 
   #main {
